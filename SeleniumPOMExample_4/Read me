@@ -1,0 +1,4 @@
+No Server required (Hosted on internet)
+A simple POM example: The web driver can be passed in to the POM as a parameter to the Constructor
+
+The POM loads up the elements assigns them neatly into variables and provides access methods
