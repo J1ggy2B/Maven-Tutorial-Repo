@@ -1,0 +1,4 @@
+Runs basic JScript Form web page using local storage
+Make sure Server is running
+Index.html will Run on Server - lets you view the site
+TestwebPage.Java - will run as a Unit test
