@@ -38,7 +38,7 @@ public class AppTest {
 		getElementByselector(".fc59__button > svg").click();
 		String res = getElementByselector(".search__resultsSectionTitle i").getText();
 		System.out.println("The number of available Java related courses is: " + res);
-		assertEquals("226", res);  //****NOTE**** IF NECESSARY - Read the Failure Trace to see current number of courses!!!!
+		assertEquals("225", res);  //****NOTE**** IF NECESSARY - Read the Failure Trace to see current number of courses!!!!
 //****************NOTE*****************NOTE***************NOTE*****************NOTE************NOTE******************
 	}
 

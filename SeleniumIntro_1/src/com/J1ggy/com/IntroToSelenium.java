@@ -20,7 +20,7 @@ public class IntroToSelenium {
 	        driver.findElement(By.id("CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll")).click();
 	        System.out.println("We have accessed the website with a Selenium WebDriver and Accepted All Cookies.");
 	        // 4 | check to see if a Cookie called Session_ID has been used.
-	        boolean isSessionCookiePresent = driver.manage().getCookieNamed("Session_Id") != null;
+	        boolean isSessionCookiePresent = driver.manage().getCookieNamed("session_Id") != null;
 	        if(isSessionCookiePresent) {
 	        System.out.println("A Cookie called Session_Id is present");
 	        }else {System.out.println("A Cookie called Session_Id is not present or has been blocked!");}

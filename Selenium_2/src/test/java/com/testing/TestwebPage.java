@@ -108,6 +108,17 @@ public class TestwebPage {
         assertEquals("", usernameValue);
         assertEquals("Enter Name:", legendText);
     }
+    @Test
+    @Timeout(value = 10, unit = TimeUnit.SECONDS)
+    public void testFindPara() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        String expected = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\nLorem Ipsum has been the industry's standard dummy text ever since the 1500s";
+        WebElement para = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("para")));
+        String actual = para.getText();
+        assertEquals(expected, actual);
+
+    }
+
 
     @AfterEach
     public void tearDown() {
