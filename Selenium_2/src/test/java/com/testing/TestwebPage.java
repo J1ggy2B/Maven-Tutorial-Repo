@@ -23,7 +23,7 @@ public class TestwebPage {
 
     @BeforeEach
     public void setUp() {
-    	System.setProperty("webdriver.edge.driver", "C:\\DevTools\\selenium-java-4.25.0\\msedgedriver.exe");
+    	System.setProperty("webdriver.edge.driver", "C:\\DevTools\\edgedriver_win64 133.0.3065.92\\msedgedriver.exe");
         driver = new EdgeDriver();
         driver.get("http://localhost:10400/Selenium_2/Index.html");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // Updated

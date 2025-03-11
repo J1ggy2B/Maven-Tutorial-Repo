@@ -1,9 +1,13 @@
 package com.qa.pages;
 
+import java.time.Duration;
+
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
 
 public class LoginPage {
     WebDriver driver;
@@ -19,6 +23,7 @@ public class LoginPage {
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
+//Something might be needed
         PageFactory.initElements(driver, this);
     }
     /* 
@@ -40,3 +45,28 @@ public class LoginPage {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(100)); // Use Duration for timeout
+//wait.until(ExpectedConditions.presenceOfElementLocated(By.id("username")));

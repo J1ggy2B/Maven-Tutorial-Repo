@@ -11,6 +11,8 @@ import org.openqa.selenium.WebDriver;
 //import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
+
+
 import com.qa.pages.LoginPage;
 
 
@@ -18,10 +20,11 @@ public class LoginTest {
     WebDriver driver;
     LoginPage loginPage;
 @Before public void setUp() {
-    	System.setProperty("webdriver.edge.driver", "C:\\DevTools\\selenium-java-4.25.0\\msedgedriver.exe");
+    	System.setProperty("webdriver.edge.driver", "C:\\DevTools\\edgedriver_win64 133.0.3065.92\\msedgedriver.exe");
         driver = new EdgeDriver();
         driver.get("https://txmike2.glitch.me/login");
         loginPage = new LoginPage(driver);
+
     }
 
 @Test 
